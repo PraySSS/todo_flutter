@@ -22,7 +22,7 @@ class signupController {
 
     try {
       final response = await http.post(
-          Uri.parse('http://bms.dyndns.tv:6004/api/create_user'),
+          Uri.parse('[YOUR_APIs]'),
           body: jsonEncode(json),
           headers: header);
 
