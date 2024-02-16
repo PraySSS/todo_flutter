@@ -26,7 +26,7 @@ class signinController {
 
     try {
       final response = await http.post(
-          Uri.parse('http://bms.dyndns.tv:6004/api/login'),
+          Uri.parse('[YOUR_APIs]'),
           body: jsonEncode(json),
           headers: header);
       //Change body data to object แกะ json ให้เป็นข้อมูลที่สามารถอ่านได้
