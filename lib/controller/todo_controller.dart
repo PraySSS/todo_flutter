@@ -75,7 +75,7 @@ class todoController {
     };
     try {
       final response = await http.post(
-          Uri.parse('http://bms.dyndns.tv:6004/api/update_todo'),
+          Uri.parse('[YOUR_APIs]'),
           body: jsonEncode(json),
           headers: header);
       log(response.statusCode.toString());
