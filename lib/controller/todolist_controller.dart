@@ -35,7 +35,7 @@ class todolistController {
 
   Future<void> deleteById(int todoListId) async {
     final response = await http.delete(
-        Uri.parse('http://bms.dyndns.tv:6004/api/delete_todo/${todoListId}'),
+        Uri.parse('[YOUR_APIs]${todoListId}'),
         headers: header);
   }
 }
