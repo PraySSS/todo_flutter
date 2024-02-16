@@ -8,7 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class todoController {
   //ประกาศ header ส่ง token เพื่อเข้าถึง backend
   final header = {
-    'Authorization': 'Bearer 950b88051dc87fe3fcb0b4df25eee676',
+    'Authorization': '[YOUR_AUTH]',
     'Content-Type': 'application/json'
   };
   Future<void> addTodo(String todo_title, String todo_description,
@@ -27,7 +27,7 @@ class todoController {
     try {
       //ส่งข้อมูลผ่านตัว response
       final response = await http.post(
-          Uri.parse('http://bms.dyndns.tv:6004/api/create_todo'),
+          Uri.parse('[YOUR_APIs]'),
           //Encode แปลงค่าที่จะส่งไปให้ json อ่านได้
           body: jsonEncode(json),
           //ส่ง Token เข้าไปด้วย
