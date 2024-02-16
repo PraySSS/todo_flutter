@@ -10,7 +10,7 @@ class signupController {
   Future<void> signup(String user_email, String user_password,
       String user_firstname, String user_lastname, BuildContext context) async {
     final header = {
-      'Authorization': 'Bearer 950b88051dc87fe3fcb0b4df25eee676',
+      'Authorization': '[YOUR_AUTH]',
       'Content-Type': 'application/json'
     };
     final json = {
