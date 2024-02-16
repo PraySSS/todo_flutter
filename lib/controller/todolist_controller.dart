@@ -12,7 +12,7 @@ class todolistController {
   //สร้าง array มารับ data
   //
   final header = {
-    'Authorization': 'Bearer 950b88051dc87fe3fcb0b4df25eee676',
+    'Authorization': '[YOUR_AUTH]',
     'Content-Type': 'application/json'
   };
   List<TodoList> dataList = [];
@@ -22,7 +22,7 @@ class todolistController {
     final int? userId = prefs.getInt('userId');
 
     final response = await http.get(
-      Uri.parse('http://bms.dyndns.tv:6004/api/todo_list/${userId}'),
+      Uri.parse('[YOUR_APIs]'),
       headers: header,
     );
 
